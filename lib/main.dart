@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => LoginCubit()),
         BlocProvider(create: (_) => UserCubit()),
-        // BlocProvider(create: (_) => ListArticleCubit()),
       ],
       child: MaterialApp(
         title: 'Flutter Test Elisoft',
