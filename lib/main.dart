@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_test_elisoft/presentation/bloc/user_cubit.dart';
 import 'package:flutter_test_elisoft/presentation/pages/login_page.dart';
 
 import 'presentation/bloc/login_cubit.dart';
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => LoginCubit()),
+        BlocProvider(create: (_) => UserCubit()),
+        // BlocProvider(create: (_) => ListArticleCubit()),
       ],
       child: MaterialApp(
         title: 'Flutter Test Elisoft',

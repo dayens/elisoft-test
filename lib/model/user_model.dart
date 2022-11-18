@@ -4,6 +4,6 @@ class UserModel {
   UserModel(this.name);
 
   factory UserModel.fromJson(json) {
-    return UserModel(json['name']);
+    return UserModel(json['user']['name']);
   }
 }
